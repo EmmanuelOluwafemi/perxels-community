@@ -1,6 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import {Link} from 'react-router-dom'
+
 const About = () => {
     
 
@@ -16,7 +18,7 @@ const About = () => {
                         It is a fellowship made up of top class designers that have come 
                         together to share their insights, stories and resources which 
                         contribute significantly to their design journeys.</p>
-                        <a href="#">Read More</a>
+                        <Link to="/">Read More</Link>
                     </AboutContent>
                 </div>
             </div>

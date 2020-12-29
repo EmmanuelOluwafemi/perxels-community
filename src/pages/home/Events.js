@@ -1,11 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/swiper.scss';
+import './events.css';
 
 const Events = () => {
     return (
@@ -13,49 +9,7 @@ const Events = () => {
             <EventHeader>
                 <h1>events<span>& meet ups</span></h1>
             </EventHeader>
-            <Swiper
-            spaceBetween={5}
-            slidesPerView={3}
-            onSlideChange={() => console.log('slide change')}
-            onSwiper={(swiper) => console.log(swiper)}
-            >
-                <SwiperSlide>
-                    <div className="slide-card">
-                        <img src="./images/graduation.jpg" alt=""/>
-                        <div className="slide-content">
-                            <h4></h4>
-                            <p></p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="slide-card">
-                        <img src="./images/slide_2.jpg" alt=""/>
-                        <div className="slide-content">
-                            <h4></h4>
-                            <p></p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="slide-card">
-                        <img src="./images/slide_3.png" alt=""/>
-                        <div className="slide-content">
-                            <h4></h4>
-                            <p></p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                    <div className="slide-card">
-                        <img src="./images/slide_4.jpg" alt=""/>
-                        <div className="slide-content">
-                            <h4></h4>
-                            <p></p>
-                        </div>
-                    </div>
-                </SwiperSlide>
-            </Swiper>
+            
         </>
     )
 }
