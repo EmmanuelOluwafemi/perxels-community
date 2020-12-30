@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Styled from 'styled-components';
 
 const Register = () => {
     return(
+        <>
         <RegisterStyle className="row">
             <div className="col-10 col-md-7 col-lg-6">
+            <Link to="/">
+                <img className="ml-5 my-4" src="./images/logo_2.png" alt="perxels logo" />
+            </Link>
                 <div style={{ marginLeft: '4rem', marginRight: '2rem' }}>
                     <RegisterHeading>Join</RegisterHeading>
                     <form action="#">
@@ -21,18 +26,18 @@ const Register = () => {
                         </FormGroupStyle>
 
                         <FormGroupStyle className="option-group">
-                            <h5>Gender</h5>
+                            <h5 className="mb-3">Gender</h5>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" />
-                                <LabelStyle class="form-check-LabelStyle" for="exampleRadios1">
+                                <LabelStyle2 class="form-check-LabelStyle" for="exampleRadios1">
                                     Male
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" />
-                                <LabelStyle class="form-check-LabelStyle" for="exampleRadios2">
+                                <LabelStyle2 class="form-check-LabelStyle" for="exampleRadios2">
                                     Female
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                         </FormGroupStyle>
                         <FormGroupStyle className="form-group">
@@ -44,71 +49,71 @@ const Register = () => {
                             <InputStyle type="email" className="form-control" id="inputPassword4" placeholder="Lagos" />
                         </FormGroupStyle>
                         <FormGroupStyle className="option-group">
-                            <h5>Social Media Handle</h5>
+                            <h5 className="mb-3">Social Media Handle</h5>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" />
-                                <LabelStyle class="form-check-label" for="exampleRadios1">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios1">
                                     Twitter
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" />
-                                <LabelStyle class="form-check-label" for="exampleRadios2">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios2">
                                     Instagram
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" />
-                                <LabelStyle class="form-check-label" for="exampleRadios2">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios2">
                                     LinkedIn
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                             <div className="form-group">
-                                <InputStyle type="email" className="form-control" id="inputPassword4" placeholder="Username" />
+                                <InputStyle type="email" className="form-control col-12 col-md-6 mt-3" id="inputPassword4" placeholder="Username" />
                             </div>
                         </FormGroupStyle>
 
                         <FormGroupStyle className="option-group">
-                            <h5>What area of UI/UX do you specialize in</h5>
+                            <h5 className="mb-3">What area of UI/UX do you specialize in</h5>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" />
-                                <LabelStyle class="form-check-label" for="exampleRadios1">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios1">
                                     User Interface
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" />
-                                <LabelStyle class="form-check-label" for="exampleRadios2">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios2">
                                     User Experience
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" />
-                                <LabelStyle class="form-check-label" for="exampleRadios2">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios2">
                                     Both
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                         </FormGroupStyle>
 
                         <FormGroupStyle className="option-group">
-                            <h5>Will you be readily available if a project comes up</h5>
+                            <h5 className="mb-3">Will you be readily available if a project comes up</h5>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" />
-                                <LabelStyle class="form-check-label" for="exampleRadios1">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios1">
                                     Yes
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" />
-                                <LabelStyle class="form-check-label" for="exampleRadios2">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios2">
                                     No
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" />
-                                <LabelStyle class="form-check-label" for="exampleRadios2">
+                                <LabelStyle2 class="form-check-label" for="exampleRadios2">
                                     Not Certain
-                                </LabelStyle>
+                                </LabelStyle2>
                             </div>
                         </FormGroupStyle>
 
@@ -119,7 +124,7 @@ const Register = () => {
 
                         <FormGroupStyle className="form-group">
                             <LabelStyle htmlFor="inputPassword4">Link to Portfolio <span>*</span></LabelStyle>
-                            <InputStyle type="email" className="form-control col-md-6" id="inputPassword4" placeholder="Link" />
+                            <InputStyle type="email" className="form-control col-12 col-md-6" id="inputPassword4" placeholder="Link" />
                         </FormGroupStyle>
 
                         <SubmitButton type="submit" className="btn btn-primary">JOIN NOW</SubmitButton>
@@ -130,6 +135,7 @@ const Register = () => {
                 <img src="./images/abstract.png" alt=""/>
             </SecondColumn>
         </RegisterStyle>
+    </>
     )
 }
 
@@ -177,6 +183,12 @@ const LabelStyle = Styled.label`
     font-size: 1.3rem;
 `;
 
+const LabelStyle2 = Styled.label`
+    font-family: ProximaRegular, "Helvetica", "Arial", sans-serif;
+    color: #000000;
+    font-size: 1.1rem;
+`;
+
 const InputStyle = Styled.input`
     border: 1px solid #1DB6BC;
 `;
@@ -198,4 +210,11 @@ const SubmitButton = Styled.button`
     text-transform: uppercase;
     font-size: 17px;
     font-family: ProximaBold, "Helvetica", "Arial", sans-serif;
+    border: none;
+    outline: none;
+    margin-bottom: 80px;
+
+    &:hover, &:active {
+        background-color: rgb(22, 156, 160);
+    }
 `;

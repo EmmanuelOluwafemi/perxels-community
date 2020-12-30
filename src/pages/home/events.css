@@ -1,10 +1,39 @@
-.swiper-container {
-    width: 100%;
-  }
+.slick-dots {
+  bottom: -40px;
+}
+
+.slick-dots li button:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background-color: #C5C5C5;
   
-  @media screen and (min-width: 768px) {
-    .swiper-container {
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
+}
+
+.slick-dots li.slick-active button:before {
+  content: '';
+  width: 24px;
+  height: 8px;
+  background-color: #C5C5C5;
+}
+
+.slide-content {
+  position: relative;
+  height: 450px;
+  padding: 0 8px;
+}
+
+.slide-content img{
+  width: auto;
+  height: 450px;
+}
+
+.slide-content .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.405) 134.17%, rgba(49, 49, 49, 0.727) 165.78%);
+  width: 100%;
+  height: 100%;
+  margin: 0 16px;
+}
